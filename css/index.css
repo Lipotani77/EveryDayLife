@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "poppins";
+    src: url("../fonts/poppins.regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+  
+    display: flex;
+    flex-direction: column;
+}
+
+
+header{
+    background-color: grey;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 2rem;
+}
+
+ul li{
+    text-decoration: none;
+    padding-top: 2rem;
+}
+
+.NavText{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.NavText:hover{
+    text-decoration: underline;
+}
+
+nav ul li:not(:first-child){
+    float: right;
+  }
+  
+  nav ul li img{
+    float: left;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+
+.navList{
+    float: left;
+}
+
+
+.navLogoImage{
+    width: 5rem;
+}
+
+
+
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.content{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.test{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    opacity: 0.8;
+    font-size: 2rem;
+    z-index: 1;   
+}
+
+#rotateImage{
+    display: block;
+    position: relative;
+    border: solid;
+    top: 0;
+    
+    margin: auto;
+    margin-top: 8%;
+    z-index: 22;
+}
+
+#rotateImage:hover{
+    border-color: aqua;
+}
+
+footer{
+    background-color: grey;
+    padding: 0.5rem;
+}
+
