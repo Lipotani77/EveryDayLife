@@ -103,19 +103,40 @@ iframe {
     z-index: 1;   
 }
 
+
 #rotateImage{
     display: block;
-    position: relative;
-    border: solid;
+    position: absolute;
     top: 0;
     
     margin: auto;
-    margin-top: 8%;
+    margin-top: 10rem;
     z-index: 22;
+    margin-left: 42rem;
+    padding: 0;
+    transition: transform 0.5s ease;
 }
 
+#stillImage{
+    display: block;
+    position: absolute;
+    top: 0;
+    
+    margin: auto;
+    z-index: 21;
+
+    padding: 0;
+    margin-left: 34.6rem;
+    margin-top: 9rem;
+}
+
+.Earth_sea_image{
+    margin-left: -2%;
+}
+
+
 #rotateImage:hover{
-    border-color: aqua;
+    transform: rotate(180deg);
 }
 
 footer{
