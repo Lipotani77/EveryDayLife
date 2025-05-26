@@ -1,0 +1,188 @@
+@font-face {
+    font-family: "poppins";
+    src: url("../fonts/poppins.regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background-color: rgb(133, 185, 198);
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 2rem;
+}
+
+ul li {
+    text-decoration: none;
+    padding-top: 2rem;
+}
+
+.NavText {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.NavText:hover {
+    text-decoration: underline;
+}
+
+nav ul li:not(:first-child) {
+    float: right;
+}
+
+nav ul li img {
+    float: left;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+
+.navList {
+    float: left;
+}
+
+
+.navLogoImage {
+    width: 5rem;
+}
+
+footer {
+    background-color: rgb(68, 67, 67);
+    color: white;
+    padding: 0.5rem;
+    position: relative;
+    height: 150px;
+}
+
+
+.footer-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.footer-bottom-right {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+
+#logoEfrei {
+    width: 5rem;
+    height: auto;
+}
+
+main {
+    font-family: poppins, sans-serif;
+    padding: 2rem;
+    color: #f0f0f0;
+    background-color: #1e1e1e;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.intro, .closing {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.team-section {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-card {
+    background-color: rgb(61, 60, 60);
+    border: 1px solid #444;
+    border-radius: 12px;
+    padding: 1.5rem;
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    transition: transform 0.2s ease;
+}
+
+.team-card:hover {
+    transform: scale(1.03);
+}
+
+.team-card h3 {
+    color: #00bfff;
+    margin-bottom: 0.5rem;
+}
+
+.team-card p {
+    text-align: left;
+    line-height: 1.4;
+    color: #ddd;
+}
+
+.team-card .bio {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #ccc;
+}
+
+#lelia {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#lelia_h3 {
+    color: #759F4B;
+    text-align: center;
+    
+}
+
+#killian_h3 {
+    color: #417E9D;
+    text-align: center;
+}

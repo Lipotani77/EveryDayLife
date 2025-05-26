@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Everyday life</title>
-    <link rel="stylesheet" href="../../css/Animals_and_Quiz/EarthLife.css">
-    <link class="tabIcon" rel="icon" type="image/x-icon" href="../../image/logo.png">
+    <link rel="stylesheet" href="../../css/Animals_and_Quiz/EarthLife.css" />
+    <link class="tabIcon" rel="icon" type="image/x-icon" href="../../image/logo.png" />
 </head>
 
 <body>
     <header>
         <nav>
             <ul class="navList">
-                <img class="navLogoImage" src="../../image/logo.png">
+                <img class="navLogoImage" src="../../image/logo.png" />
                 <li><a class="NavText" href="../Animals_and_Quiz/SeaLife.html">Sea life</a></li>
                 <li><a class="NavText" href="EarthLife.html">Earth life</a></li>
                 <li><a class="NavText" href="../index.html">Home</a></li>
@@ -22,75 +22,79 @@
     </header>
 
     <main>
-        <h1>Do you undertand Earth life ?</h1>
+        <h1>Do you understand Earth life?</h1>
+
         <fieldset class="quiz">
             <legend>QCM - Earth Life</legend>
             <ol id="Round1">
-                <li class="questions_style"> What is your CB number ?
+                <li class="questions_style">
+                    What is your CB number?
                     <ul class="questions">
-                        <li>
-                            <input type="radio" id="q1_1" name="q1" value="a">
-                            <label for="q1_1" class="btn_radio">Prop1</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="q1_2" name="q1" value="b">
-                            <label for="q1_2" class="btn_radio">Prop2</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="q1_3" name="q1" value="c">
-                            <label for="q1_3" class="btn_radio">Prop3</label>
-                        </li>
+                        <li><input type="radio" id="q1_1" name="q1" value="a" /><label for="q1_1"
+                                class="btn_radio">Prop1</label></li>
+                        <li><input type="radio" id="q1_2" name="q1" value="b" /><label for="q1_2"
+                                class="btn_radio">Prop2</label></li>
+                        <li><input type="radio" id="q1_3" name="q1" value="c" /><label for="q1_3"
+                                class="btn_radio">Prop3</label></li>
                     </ul>
                 </li>
 
-                <li class="questions_style">What is your home address ?
+                <li class="questions_style">
+                    What is your home address?
                     <ul class="questions">
-                        <li>
-                            <input type="checkbox" id="q2_1" name="q2[]" value="a">
-                            <label for="q2_1" class="btn_checkbox">Prop1</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="q2_2" name="q2[]" value="b">
-                            <label for="q2_2" class="btn_checkbox">Prop2</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="q2_3" name="q2[]" value="c">
-                            <label for="q2_3" class="btn_checkbox">Prop3</label>
-                        </li>
+                        <li><input type="checkbox" id="q2_1" name="q2[]" value="a" /><label for="q2_1"
+                                class="btn_checkbox">Prop1</label></li>
+                        <li><input type="checkbox" id="q2_2" name="q2[]" value="b" /><label for="q2_2"
+                                class="btn_checkbox">Prop2</label></li>
+                        <li><input type="checkbox" id="q2_3" name="q2[]" value="c" /><label for="q2_3"
+                                class="btn_checkbox">Prop3</label></li>
                     </ul>
                 </li>
 
-                <li class="questions_style">Are you rich ?
+                <li class="questions_style">
+                    Are you rich?
                     <ul class="questions">
-                        <li>
-                            <input type="radio" id="q3_1" name="q3" value="a">
-                            <label for="q3_1" class="btn_radio">Prop1</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="q3_2" name="q3" value="b">
-                            <label for="q3_2" class="btn_radio">Prop2</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="q3_3" name="q3" value="c">
-                            <label for="q3_3" class="btn_radio">Prop3</label>
-                        </li>
+                        <li><input type="radio" id="q3_1" name="q3" value="a" /><label for="q3_1"
+                                class="btn_radio">Prop1</label></li>
+                        <li><input type="radio" id="q3_2" name="q3" value="b" /><label for="q3_2"
+                                class="btn_radio">Prop2</label></li>
+                        <li><input type="radio" id="q3_3" name="q3" value="c" /><label for="q3_3"
+                                class="btn_radio">Prop3</label></li>
                     </ul>
                 </li>
             </ol>
         </fieldset>
 
         <div>
-            <button id="submit" type="button">Submit</button>
+            <input type="button" value="Submit" />
         </div>
 
+        <section id="taquin-game">
+            <h2>Play Taquin!</h2>
+            <label for="imageUpload" class="custom-file-upload">Choose Image</label>
+            <input type="file" id="imageUpload" accept="image/*" />
+
+            <div id="taquin-board"></div>
+            <input type="button" id="shuffle-btn" value="Shuffle" />
+        </section>
+
+        <div id="win-message">You solved the puzzle!</div>
     </main>
 
-
     <footer>
-        <p>©️2025 Killian KOULOURATH - Lélia GHEZALI</p>
-        <a class="NavText" href="../html/Animals_and_Quiz/SeaLife.html">Sea life</a>
-        <a class="NavText" href="../html/Animals_and_Quiz/EarthLife.html">Earth life</a>
+        <p>© 2025 Killian KOULOURATH - Lélia GHEZALI</p>
+        <div class="footer-center">
+            <a class="NavText" href="../index.html">Home</a>
+            <a class="NavText" href="../Animals_and_Quiz/SeaLife.html">Sea life</a>
+            <a class="NavText" href="EarthLife.html">Earth life</a>
+            <a class="NavText" href="../html/about.html">About</a>
+        </div>
+        <div class="footer-bottom-right">
+            <img id="logoEfrei" src="../../image/LOGO_EFREI-WEB_blanc.png" alt="Efrei Paris logo" />
+        </div>
     </footer>
+
+    <script src="../../js/taquin.js"></script>
 </body>
 
 </html>
