@@ -21,7 +21,6 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-    /* pour rester au-dessus */
 }
 
 
@@ -120,7 +119,6 @@ iframe {
     position: relative;
     width: 100%;
     max-width: 400px;
-    /*Change the size of the images here*/
     margin: auto;
     aspect-ratio: 1/1;
     margin-top: 14%;
@@ -137,7 +135,6 @@ iframe {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* ou contain si tu veux tout voir */
     padding: 0;
     margin: 0;
 }
@@ -202,7 +199,6 @@ iframe {
 .left-student img,
 .right-student img {
     width: 100%;
-    /* pour s’adapter au conteneur */
     height: auto;
 }
 
@@ -225,9 +221,7 @@ iframe {
     border-color: #F9FAFB;
     border-radius: 20px;
     text-align: center;
-    /* Center text inside */
     font-size: 1.9rem;
-    /* Responsive-friendly font size */
 }
 
 
@@ -263,12 +257,13 @@ iframe {
     cursor: pointer;
 }
 
-#worldImage{
+#worldImage {
     width: 50%;
 }
 
 footer {
-    background-color: grey;
+    background-color: rgb(55, 55, 55);
     padding: 0.5rem;
     margin: 0;
+    color: white;
 }
