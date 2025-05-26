@@ -19,10 +19,12 @@ body {
 
 header {
     background-color: rgb(133, 185, 198);
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000; /* pour rester au-dessus */
 }
+
 
 nav ul {
     list-style-type: none;
@@ -118,12 +120,10 @@ iframe {
 .Earth_sea_image {
     position: relative;
     width: 100%;
-    /* S'adapte à la largeur du parent */
     max-width: 400px;
-    /* Limite maximale (à adapter) */
+    /*Change the size of the images here*/
     margin: auto;
     aspect-ratio: 1/1;
-    /* Carré, à adapter selon le ratio réel des images */
     margin-top: 10%;
 }
 
@@ -153,6 +153,40 @@ iframe {
 #rotateImage:hover {
     transform: rotate(180deg);
 }
+
+
+.left-student,
+.right-student {
+    position: absolute;
+    top: 28%;
+    z-index: 2;
+    width: 200px;
+    /* réduit la taille du conteneur */
+    height: auto;
+    background-color: rgb(133, 185, 198);
+    border: solid;
+    border-color: #F9FAFB;
+    border-radius: 20px;
+}
+
+.left-student {
+    left: 1%;
+}
+
+.right-student {
+    right: 1%;
+    transform: scaleX(-1);
+}
+
+.left-student img,
+.right-student img {
+    width: 100%;
+    /* pour s’adapter au conteneur */
+    height: auto;
+}
+
+
+
 
 .map {
     margin: 5rem;
