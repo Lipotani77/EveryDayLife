@@ -267,43 +267,62 @@ iframe {
 .image_container {
     position: relative;
     width: 100%;
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
-    border: solid;
-    margin-top: 5%;
+    
+    margin-top: 4%;
 }
 
 #worldImage {
     width: 100%;
     height: auto;
     display: block;
-
 }
 
+/* ------- CSS for the pin ------- */
 .pins {
     position: absolute;
     width: 60px;
+    z-index: 2;
 }
 
 .pin_container {
     position: absolute;
+    z-index: 2;
+}
+
+.pin_container:hover {
+    transform: scale(1.2);
 }
 
 .pin-info-box {
     display: none;
     position: absolute;
-    width: 120px;
+    max-width: 500px;
     height: auto;
     background-color: rgba(255, 255, 255, 0.95);
     border: 2px solid #333;
     border-radius: 8px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     color: #000;
-    padding: 0.5rem;
-    z-index: 1;
+    padding: 0.3rem;
+    z-index: 1000;
 }
 
+.pin-info-box img {
+    max-height: 150px;
+    height: auto;
+    display: block;
+}
+
+.pin_container:hover .pin-info-box {
+    display: block;
+}
+
+/*-------------------------------------------------------*/
+
+/* ----- Pin for animal 1 ----- */
 #info-box-A1 {
     top: 0;
     left: 100%;
@@ -311,17 +330,57 @@ iframe {
 }
 
 #pin_container_1 {
+    top: 35%;
+    left: 10%;
+}
+
+/*--------------------------------*/
+
+/* ----- Pin for animal 2 ----- */
+#info-box-A2 {
+    top: 0;
+    left: 100%;
+    margin-left: 50px;
+}
+
+#pin_container_2 {
+    top: 65%;
+    left: 75%;
+}
+
+
+/*--------------------------------*/
+
+/* ----- Pin for animal 3 ----- */
+#info-box-A3 {
+    top: 0;
+    left: 100%;
+    margin-left: 50px;
+}
+
+#pin_container_3 {
     top: 40%;
-    left: 60%;
+    left: 70%;
 }
 
-#PinAnimal1:hover {
-    transform: scale(1.5);
+
+/*--------------------------------*/
+
+/* ----- Pin for animal 4 ----- */
+#info-box-A4 {
+    top: 0;
+    left: 100%;
+    margin-left: 50px;
 }
 
-.pin_container:hover .pin-info-box {
-    display: block;
+#pin_container_4 {
+    top: 70%;
+    left: 82%;
 }
+
+
+/*--------------------------------*/
+
 
 /* -------- CSS for the footer -------- */
 footer {
