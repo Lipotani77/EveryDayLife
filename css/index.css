@@ -250,7 +250,9 @@ iframe {
     border: 1px solid #888;
     border-radius: 16px;
     width: 100%;
+    height: 80%;
     max-width: 1000px;
+    max-height: 1000px;
     text-align: center;
 }
 
@@ -262,16 +264,73 @@ iframe {
     cursor: pointer;
 }
 
-#worldImage {
-    width: 50%;
+.image_container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: solid;
+    margin-top: 5%;
 }
 
+#worldImage {
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+.pins {
+    position: absolute;
+    width: 60px;
+}
+
+.pin_container {
+    position: absolute;
+}
+
+.pin-info-box {
+    display: none;
+    position: absolute;
+    width: 120px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 2px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    font-size: 0.8rem;
+    color: #000;
+    padding: 0.5rem;
+    z-index: 1;
+}
+
+#info-box-A1 {
+    top: 0;
+    left: 100%;
+    margin-left: 50px;
+}
+
+#pin_container_1 {
+    top: 40%;
+    left: 60%;
+}
+
+#PinAnimal1:hover {
+    transform: scale(1.5);
+}
+
+.pin_container:hover .pin-info-box {
+    display: block;
+}
+
+/* -------- CSS for the footer -------- */
 footer {
     background-color: rgb(68, 67, 67);
     color: white;
     padding: 0.5rem;
     position: relative;
-    height: 150px; /* Adjust height as needed */
+    height: 150px;
+    /* Adjust height as needed */
 }
 
 
@@ -295,8 +354,9 @@ footer a {
     margin: 0 0.5rem;
 }
 
-
 #logoEfrei {
     width: 5rem;
     height: auto;
 }
+
+/*---------------------------------------------*/
