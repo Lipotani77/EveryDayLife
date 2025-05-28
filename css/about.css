@@ -66,40 +66,55 @@ nav ul li img {
     width: 5rem;
 }
 
+/* -------- CSS for the footer -------- */
+
 footer {
     background-color: rgb(68, 67, 67);
     color: white;
-    padding: 0.5rem;
-    position: relative;
-    height: 150px;
-}
-
-
-.footer-center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
     text-align: center;
 }
 
-.footer-bottom-right {
-    position: absolute;
-    bottom: 0.5rem;
-    right: 1rem;
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1 1;
+    margin: 0.5rem 0;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
 }
 
 footer a {
     color: white;
     text-decoration: none;
-    margin: 0 0.5rem;
+    font-size: 1rem;
 }
-
 
 #logoEfrei {
-    width: 5rem;
+    width: 4rem;
     height: auto;
 }
+
+/*---------------------------------------------*/
 
 main {
     font-family: poppins, sans-serif;
