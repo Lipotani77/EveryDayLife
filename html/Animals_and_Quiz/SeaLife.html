@@ -55,7 +55,6 @@
                 <input type="button" value="Start quiz" onclick="quizAlert()">
 
             </fieldset>
-
             <fieldset class="quiz">
                 <legend>QCM - Sea Life</legend>
                 <ol id="Round1">
@@ -98,19 +97,32 @@
             </fieldset>
 
             <div>
-                <input type="button" value="Submit" />
+                <input type="button" id="submit" value="Submit" />
             </div>
 
             <section id="taquin-game">
                 <h2>Play Taquin!</h2>
-                <label for="imageUpload" class="custom-file-upload">Choose Image</label>
-                <input type="file" id="imageUpload" accept="image/*" />
+
+                <div id="image-preview-container">
+                    <div class="image-option"
+                        onclick="chooseImage('../../image/Animals/Devils_hole_pupfish.png')">
+                        <img src="../../image/Animals/Devils_hole_pupfish.png" alt="Turtle">
+                        <div class="image-label">Choose Image 1</div>
+                    </div>
+
+                    <div class="image-option" onclick="chooseImage('../../image/Animals/Dragonet_mandarin.png')">
+                        <img src="../../image/Animals/Dragonet_mandarin.png" alt="Panda">
+                        <div class="image-label">Choose Image 2</div>
+                    </div>
+
+                </div>
 
                 <div id="taquin-board"></div>
                 <input type="button" id="shuffle-btn" value="Shuffle" />
             </section>
 
-            <div id="win-message">You solved the puzzle!</div>
+
+            <div id="win-message">Congratulations !<br>You solved the puzzle!</div>
     </main>
 
 
@@ -130,6 +142,8 @@
     </footer>
 
     <script src="../../js/taquin.js"></script>
+    <script src="../../js/qcm.js"></script>
+
 </body>
 
 </html>

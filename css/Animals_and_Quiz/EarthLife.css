@@ -7,7 +7,7 @@
 
 
 header {
-    background-color: rgb(133, 185, 198);
+    background-color: #8BC34A;
     position: fixed;
     top: 0;
     width: 100%;
@@ -90,20 +90,17 @@ fieldset.quiz {
 
 h1 {
     text-align: center;
-    color: #2C3E50;
+    color: #1B3D2F;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
     font-size: 2rem;
     margin-bottom: 2rem;
 }
 
-legend {
-    font-size: 1.5rem;
-    color: #228B22;
-    font-weight: bold;
-    padding: 0 0.5rem;
-}
-
 .questions_style {
     margin-bottom: 1.5rem;
+    font-family: poppins, sans-serif;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -127,6 +124,8 @@ legend {
     display: block;
     margin: 2rem auto;
     padding: 0.75rem 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     font-size: 1rem;
     background-color: #228B22;
     color: white;
@@ -198,6 +197,8 @@ footer a {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: #1B3D2F;
     font-weight: bold;
     font-size: 1.5rem;
     background-size: 400px 400px;
@@ -212,20 +213,23 @@ footer a {
 }
 
 .tile:hover {
-    background-color: #009acd;
+    background-color: #8BC34A;
 }
 
 .tile.empty {
     background-color: transparent;
     cursor: default;
 }
+
 #win-message {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #00bfff;
+    background: #228B22;
     color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
     font-size: 1.5rem;
     padding: 1.5rem 2rem;
     border-radius: 12px;
@@ -234,6 +238,7 @@ footer a {
     pointer-events: none;
     transition: opacity 0.5s ease, transform 0.5s ease;
     z-index: 9999;
+    text-align: center;
 }
 
 #win-message.show {
@@ -253,19 +258,21 @@ button, input[type="button"], input[type="submit"], input[type="file"] {
     display: inline-block;
     color: white;
     background-color: #228B22;
-    box-shadow: 0 4px 8px rgba(0, 191, 255, 0.4);
     user-select: none;
+    text-align: center;
+    margin: 1rem 0.5rem 1rem 0;
 }
+
 
 button:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="file"]:hover {
     background-color: #228B22;
-    box-shadow: 0 6px 12px rgba(0, 154, 205, 0.6);
+    box-shadow: 0 6px 12px #8BC34A;
     transform: translateY(-2px);
 }
 
 button:active, input[type="button"]:active, input[type="submit"]:active, input[type="file"]:active {
     background-color: #228B22;
-    box-shadow: 0 3px 6px rgba(0, 122, 175, 0.8);
+    box-shadow: 0 3px 6px #8BC34A;
     transform: translateY(0);
 }
 
@@ -290,26 +297,23 @@ input[type="file"] {
     background-color: #228B22;
     color: white;
     display: inline-block;
-    box-shadow: 0 4px 8px rgba(0, 191, 255, 0.4);
     transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.15s ease;
     user-select: none;
-    min-width: 140px;
     text-align: center;
     margin: 1rem 0.5rem 1rem 0;
 }
 
 .custom-file-upload:hover {
     background-color: #228B22;
-    box-shadow: 0 6px 12px rgba(0, 154, 205, 0.6);
+    box-shadow: 0 6px 12px #8BC34A;
     transform: translateY(-2px);
 }
 
 .custom-file-upload:active {
     background-color: #228B22;
-    box-shadow: 0 3px 6px rgba(0, 122, 175, 0.8);
+    box-shadow: 0 3px 6px #8BC34A;
     transform: translateY(0);
 }
-
 
 input[type="file"]::before {
     content: "Choose Image";
@@ -331,32 +335,23 @@ input[type="file"]::-moz-file-upload-button {
     visibility: hidden;
 }
 
-button, input[type="button"], input[type="submit"], input[type="file"] {
-    margin: 1rem 0.5rem 1rem 0;
-    min-width: 140px;
-    text-align: center;
-}
-
 
 form {
-    width: 60%;
+    width: 100%;
     margin: 50px auto 50px auto;
     background-color: #f9f9f9;
     padding: 10px;
-    border: 2px solid #2e7d32;
+    border: 2px solid #228B22;
     border-radius: 8px;
 }
 
-fieldset {
-    border: 1px solid #2e7d32;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
 
 fieldset legend {
-    padding: 5px 10px;
-    background-color: #2e7d32;
-    color: white;
+    font-family: poppins, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 12px;
+    color: #228B22;
     border-radius: 8px;
 }
 
@@ -383,7 +378,7 @@ input[type="text"], input[type="email"], input[type="date"], select{
     padding: 10px;
     margin-bottom: 10px;
     margin-top : 10px;
-    border: 1px solid #2e7d32;
+    border: 1px solid #228B22;
     border-radius: 8px;
 }
 
@@ -400,3 +395,70 @@ input[type="text"], input[type="email"], input[type="date"], select{
 button{
     display: none;
 }
+
+#image-preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.image-option {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-option img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+    transition: opacity 0.3s ease;
+}
+
+.image-option:hover img {
+    opacity: 0.2;
+}
+
+.image-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #1B3D2F;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+}
+
+.image-option:hover .image-label {
+    opacity: 1;
+}
+
+.image-option.selected {
+    outline: 4px solid #228B22;
+    transform: scale(1.05);
+}
+
+#information {
+    font-family: poppins, sans-serif;
+    color: #1B3D2F;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+

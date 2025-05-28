@@ -1,13 +1,11 @@
-let attempts = 0;
-
 function quizAlert() {
     //Check filedset completed
     var fieldset = document.getElementById("information");
     var inputs = fieldset.querySelectorAll("input, select, textarea");
 
     var allFilled = true;
-    
-    inputs.forEach(function(input) {
+
+    inputs.forEach(function (input) {
         if (input.type !== "button" && input.type !== "submit") {
             if (!input.value.trim()) {
                 allFilled = false;
@@ -26,58 +24,58 @@ function quizAlert() {
 
 
 // Function to show the quiz and start the countdown
-function quizConfirm() { 
+function quizConfirm() {
 
-    let res = confirm("Are you sure you want to continue?"); 
+    let res = confirm("Are you sure you want to continue?");
 
     if (res) {
-        alert("The quiz will start in 5 seconds!"); 
+        alert("The quiz will start in 5 seconds!");
 
         //add a 5-second countdown 
-        var timer = 5; 
+        var timer = 5;
 
         //Create an element p to display the message 
-        var confirmation = document.createElement("p"); 
-        confirmation.textContent = timer + "seconds"; 
+        var confirmation = document.createElement("p");
+        confirmation.textContent = timer + " seconds";
 
         //style of message 
-        confirmation.style.color = "red"; 
-        confirmation.style.fontSize = "1.5em"; 
-        confirmation.style.fontWeight = "bold"; 
-        confirmation.style.textAlign = "center"; 
+        confirmation.style.color = "red";
+        confirmation.style.fontSize = "1.5em";
+        confirmation.style.fontWeight = "bold";
+        confirmation.style.textAlign = "center";
 
         //add the message to the page after the start id button 
-        var start = document.getElementById("information"); 
-        start.appendChild(confirmation); 
+        var start = document.getElementById("information");
+        start.appendChild(confirmation);
 
         //using the setInterval function, which runs every second 
-        var interval = setInterval(function () { 
+        var interval = setInterval(function () {
             //decrement countdown 
-            timer--; 
+            timer--;
 
             //It is also displayed in the console 
-            console.log(timer); 
+            console.log(timer);
 
-             //display the countdown in the p element created 
-            confirmation.textContent = timer + " seconds"; 
+            //display the countdown in the p element created 
+            confirmation.textContent = timer + " seconds";
 
             //if the countdown is over 
             //show the message "Here we go! Good luck!" 
             //show form 
             //show submission button 
-            if (timer == 0) { 
-                clearInterval(interval); 
-                confirmation.textContent = "Here we go! Good luck!"; 
-                document.getElementsByClassName("quiz")[0].style.display = "block"; 
+            if (timer == 0) {
+                clearInterval(interval);
+                confirmation.textContent = "Here we go! Good luck!";
+                document.getElementsByClassName("quiz")[0].style.display = "block";
                 document.getElementsByTagName("button")[0].style.display = "block";
-                information.style.display = "none";  
-            }  
+                information.style.display = "none";
+            }
         }, 1000);
-        
-    } else { 
-        alert("You will be redirected to the home page!"); 
-        window.location.href = "home.html"; 
-    } 
+
+    } else {
+        alert("You will be redirected to the home page!");
+        window.location.href = "../../html/index.html";
+    }
 }
 
 
@@ -86,33 +84,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("submit").addEventListener("click", function () {
 
-        if (attempts >= 3) {
-            this.disabled = true;
-            return;
-        }
-        
-
+        // Check if the user has filled in the information
         const score = submitQuiz();
-        attempts++;
-
-        const result = document.getElementById("result");
-        const row = document.createElement("tr");
-
-        const attemptsCell = document.createElement("td");
-        attemptsCell.textContent = attempts;
-
-        const scoreCell = document.createElement("td");
-        scoreCell.textContent = score;
-
-        row.appendChild(attemptsCell);
-        row.appendChild(scoreCell);
-        result.querySelector("tbody").appendChild(row);
 
         resetQuiz();
-
-        if (attempts >= 3){
-            this.disabled = true;
-        }
 
     });
 });
@@ -121,22 +96,53 @@ function submitQuiz() {
     let score = 0;
 
     for (let answer of document.querySelectorAll("input[type='radio']:checked")) {
-        if (answer.value === "a") score += 4;
+        if (window.location.href.includes("EarthLife.html")) {
+            if (answer.value === "a") score += 5;
+            else if (answer.value === "b") score -= 5;
+            else if (answer.value === "c") score -= 5;
+        }
+        else {
+            if (answer.value === "b") score += 5;
+            else if (answer.value === "a") score -= 5;
+            else if (answer.value === "c") score -= 5;
+        }
+
     }
 
     for (let answer of document.querySelectorAll("input[type='checkbox']:checked")) {
-        if (["a", "b"].includes(answer.value)) 
-            score += 3;
-        else if (answer.value === "c") 
-            score -= 3;
+        if (window.location.href.includes("EarthLife.html")) {
+
+            if (["a", "c"].includes(answer.value))
+                score += 5;
+            else if (answer.value === "b")
+                score -= 10;
+        }
+        else {
+            if (["a", "b"].includes(answer.value))
+                score += 5;
+            else if (answer.value === "c")
+                score -= 10;
+        }
     }
+
+    if (score < 10) // under the average
+        alert(`You scored ${score}/20 points... try again!`);
+    else if (score >= 10 && score != 20)
+        alert(`You scored ${score}/20 points! Well done!`);
+    else if (score === 20) // perfect score
+        // Check the URL to determine which alert to show
+        if (window.location.href.includes("EarthLife.html"))
+            alert(`You scored ${score}/20 points! Perfect! You know Earth life better than anyone!`);
+        else
+            alert(`You scored ${score}/20 points! Perfect! You know Sea life better than anyone!`);
     return score;
 }
 
 
+
 function resetQuiz() {
 
-    document.querySelectorAll("input[type='radio']:checked").forEach((input) =>{
+    document.querySelectorAll("input[type='radio']:checked").forEach((input) => {
         input.checked = false;
     });
 
@@ -147,4 +153,4 @@ function resetQuiz() {
     window.scrollTo(0, 0);
 }
 
-    
+

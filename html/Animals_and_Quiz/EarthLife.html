@@ -97,19 +97,32 @@
             </fieldset>
 
             <div>
-                <input type="button" value="Submit" />
+                <input type="button" id="submit" value="Submit" />
             </div>
 
             <section id="taquin-game">
                 <h2>Play Taquin!</h2>
-                <label for="imageUpload" class="custom-file-upload">Choose Image</label>
-                <input type="file" id="imageUpload" accept="image/*" />
+
+                <div id="image-preview-container">
+                    <div class="image-option"
+                        onclick="chooseImage('../../image/Animals/Roti-Island-snake-necked-turtle.png')">
+                        <img src="../../image/Animals/Roti-Island-snake-necked-turtle.png" alt="Turtle">
+                        <div class="image-label">Choose Image 1</div>
+                    </div>
+
+                    <div class="image-option" onclick="chooseImage('../../image/Animals/pandido.jpg')">
+                        <img src="../../image/Animals/pandido.jpg" alt="Panda">
+                        <div class="image-label">Choose Image 2</div>
+                    </div>
+
+                </div>
 
                 <div id="taquin-board"></div>
                 <input type="button" id="shuffle-btn" value="Shuffle" />
             </section>
 
-            <div id="win-message">You solved the puzzle!</div>
+
+            <div id="win-message">Congratulations !<br>You solved the puzzle!</div>
     </main>
 
     <footer>
@@ -126,7 +139,7 @@
     </footer>
 
     <script src="../../js/taquin.js"></script>
-    <script> src="../../js/qcm.js"</script>
+    <script src="../../js/qcm.js"></script>
 </body>
 
 </html>
