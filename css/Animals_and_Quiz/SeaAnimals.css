@@ -1,0 +1,250 @@
+@font-face {
+    font-family: "poppins";
+    src: url("../fonts/poppins.regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* --------------- Header Styles --------------- */
+header {
+    background-color: rgb(133, 185, 198);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  /* Navigation container */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+  }
+  
+  /* Each list item */
+  nav ul li {
+    padding: 1rem 1.5rem;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect on the entire li block */
+  nav ul li:hover {
+    background-color: #8BC34A;
+  }
+  
+  /* Navigation text */
+  .NavText {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    display: block;
+  }
+  
+  /* Logo image */
+  nav ul li img {
+    float: left;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  
+  /* Logo container */
+  .navLogoImage {
+    width: 4.3rem;
+  }  
+
+.NavText {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1rem;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+}
+
+nav ul li:not(:first-child) {
+    float: right;
+}
+
+nav ul li img {
+    float: left;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+
+.navList {
+    float: left;
+}
+
+
+.navLogoImage {
+    width: 5rem;
+}
+
+/* -------- CSS for the main content -------- */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F0;
+}
+
+main {
+    flex: 1;
+    padding: 7rem 1rem 3rem 1rem;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+h1,h2 {
+    text-align: center;
+    color: #1B3D2F;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+/* -------- CSS for the footer -------- */
+
+footer {
+    background-color: rgb(68, 67, 67);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1 1;
+    margin: 0.5rem 0;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#logoEfrei {
+    width: 4rem;
+    height: auto;
+}
+
+/*---------------------------------------------*/
+
+/* CSS for the video and audio sections */
+
+.container {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.video-container,
+.audio-container {
+    width: 100%;
+    margin: 2rem 0;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.audio-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+  
+  /* Article styles */
+
+  .articles {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.article {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 6px solid rgb(56, 117, 132);
+}
+
+.article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.article h2 {
+    margin-top: 0;
+    color: #2C3E50;
+    font-size: 1.5rem;
+}
+
+.article p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.article a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: rgb(56, 117, 132);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.article a:hover {
+    color: rgb(133, 185, 198);
+    text-decoration: underline;
+}
