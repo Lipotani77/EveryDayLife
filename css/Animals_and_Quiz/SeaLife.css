@@ -6,37 +6,66 @@
 }
 
 
+/* --------------- Header Styles --------------- */
 header {
-    background-color: #6CCFF6;
+    background-color: rgb(133, 185, 198);
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-}
-
-
-nav ul {
+  }
+  
+  /* Navigation container */
+  nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
     margin-right: 2rem;
-}
-
-ul li {
-    text-decoration: none;
-    padding-top: 2rem;
+  }
+  
+  /* Each list item */
+  nav ul li {
+    padding: 1rem 1.5rem;
     font-size: 20px;
-}
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect on the entire li block */
+  nav ul li:hover {
+    background-color: #8BC34A;
+  }
+  
+  /* Navigation text */
+  .NavText {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    display: block;
+  }
+  
+  /* Logo image */
+  nav ul li img {
+    float: left;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  
+  /* Logo container */
+  .navLogoImage {
+    width: 4.3rem;
+  }  
 
 .NavText {
     text-decoration: none;
     color: #ffffff;
     padding: 1rem;
+    font-family: poppins, sans-serif;
     font-weight: bold;
-}
-
-.NavText:hover {
-    text-decoration: underline;
+    font-size: medium;
 }
 
 nav ul li:not(:first-child) {
@@ -58,6 +87,8 @@ nav ul li img {
 .navLogoImage {
     width: 5rem;
 }
+
+/* --------------- Main Content Styles --------------- */
 
 html,
 body {
