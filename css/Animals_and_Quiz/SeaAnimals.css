@@ -13,10 +13,10 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-  }
-  
-  /* Navigation container */
-  nav ul {
+}
+
+/* Navigation container */
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -25,39 +25,39 @@ header {
     justify-content: flex-end;
     align-items: center;
     margin-right: 2rem;
-  }
-  
-  /* Each list item */
-  nav ul li {
+}
+
+/* Each list item */
+nav ul li {
     padding: 1rem 1.5rem;
     font-size: 20px;
     transition: background-color 0.3s ease;
-  }
-  
-  /* Hover effect on the entire li block */
-  nav ul li:hover {
+}
+
+/* Hover effect on the entire li block */
+nav ul li:hover {
     background-color: #8BC34A;
-  }
-  
-  /* Navigation text */
-  .NavText {
+}
+
+/* Navigation text */
+.NavText {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
     display: block;
-  }
-  
-  /* Logo image */
-  nav ul li img {
+}
+
+/* Logo image */
+nav ul li img {
     float: left;
     padding: 0.5rem;
     margin-left: 0.5rem;
-  }
-  
-  /* Logo container */
-  .navLogoImage {
+}
+
+/* Logo container */
+.navLogoImage {
     width: 4.3rem;
-  }  
+}
 
 .NavText {
     text-decoration: none;
@@ -109,7 +109,8 @@ main {
     box-sizing: border-box;
 }
 
-h1,h2 {
+h1,
+h2 {
     text-align: center;
     color: #1B3D2F;
     font-family: poppins, sans-serif;
@@ -190,17 +191,17 @@ footer a {
     overflow: hidden;
 }
 
-.audio-container{
+.audio-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
 }
 
-  
-  /* Article styles */
 
-  .articles {
+/* Article styles */
+
+.articles {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -247,4 +248,30 @@ footer a {
 .article a:hover {
     color: rgb(133, 185, 198);
     text-decoration: underline;
+}
+
+#backToTopButton {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    bottom: 15%;
+    right: 2%;
+    z-index: 99;
+    font-size: 18px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+
+}
+
+
+
+#backToTopButton:hover {
+    background-color: #818181;
 }
