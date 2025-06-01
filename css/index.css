@@ -22,10 +22,10 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-  }
-  
-  /* Navigation container */
-  nav ul {
+}
+
+/* Navigation container */
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -34,39 +34,39 @@ header {
     justify-content: flex-end;
     align-items: center;
     margin-right: 2rem;
-  }
-  
-  /* Each list item */
-  nav ul li {
+}
+
+/* Each list item */
+nav ul li {
     padding: 1rem 1.5rem;
     font-size: 20px;
     transition: background-color 0.3s ease;
-  }
-  
-  /* Hover effect on the entire li block */
-  nav ul li:hover {
+}
+
+/* Hover effect on the entire li block */
+nav ul li:hover {
     background-color: #8BC34A;
-  }
-  
-  /* Navigation text */
-  .NavText {
+}
+
+/* Navigation text */
+.NavText {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
     display: block;
-  }
-  
-  /* Logo image */
-  nav ul li img {
+}
+
+/* Logo image */
+nav ul li img {
     float: left;
     padding: 0.5rem;
     margin-left: 0.5rem;
-  }
-  
-  /* Logo container */
-  .navLogoImage {
+}
+
+/* Logo container */
+.navLogoImage {
     width: 4.3rem;
-  }  
+}
 
 .NavText {
     text-decoration: none;
@@ -352,6 +352,39 @@ iframe {
     display: block;
 }
 
+.pin-info-box::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(270deg,
+            #85b9c6,
+            #5be838,
+            #8bc34a,
+            #85b9c6
+        );
+    background-size: 600% 600%;
+    border-radius: 15px;
+    z-index: -1;
+    animation: gradient-animation 5s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 /*-------------------------------------------------------*/
 
 /* ----- Pin for animal 1 ----- */
@@ -413,6 +446,9 @@ iframe {
 
 /*--------------------------------*/
 
+#ExplorationImg {
+    width: 45%;
+}
 
 /* -------- CSS for the footer -------- */
 
