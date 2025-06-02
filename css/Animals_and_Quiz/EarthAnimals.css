@@ -251,13 +251,13 @@ footer a {
 
 .article h2 {
     margin-top: 0;
-    color: #2C3E50;
+    color: #1B3D2F;
     font-size: 1.5rem;
 }
 
 .article p {
-    color: #555;
-    line-height: 1.6;
+    color: black;
+    line-height: 1.2;
     font-size: 1rem;
 }
 
