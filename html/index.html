@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<head>
+<head> <!-- Document type declaration for HTML5 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Everyday life</title>
@@ -24,48 +24,51 @@
     </header>
 
     <main>
-        <div class="content">
+        <div class="content"> <!-- Main content area -->
 
-            <h1 id="HomeTitle">Welcome to everyday life !</h1>
+            <h1 id="HomeTitle">Welcome to everyday life !</h1> <!-- Main title of the page -->
 
             <iframe
                 src="https://www.youtube.com/embed/Fx8lFMilCEw?start=71&autoplay=1&mute=1&loop=1&playlist=Fx8lFMilCEw&controls=0&showinfo=0&modestbranding=1&rel=0"
                 allow="autoplay" allowfullscreen></iframe>
+            <!-- Embedded YouTube video with autoplay and muted settings -->
 
 
-            <div class="layer">
-            </div>
+            <div class="layer"></div> <!-- Overlay layer for visual effect -->
 
-            <div class="Earth_sea_image">
+            <div class="Earth_sea_image"> <!-- Container for images -->
                 <img id="stillImage" src="../image/Earth&Sea.jpg" alt="Earth and sea image">
+                <!-- Static image of Earth and sea -->
                 <img id="rotateImage" src="../image/Earth.png" alt="Earth and sea image">
+                <!-- Rotating image of Earth -->
             </div>
 
-            <div class="left-student">
-                <a href="../html/about.html">
+            <div class="left-student"> <!-- Left side student image -->
+                <a href="../html/about.html"> <!-- Link to the about page -->
                     <img src="../image/etudiant_bonhomme_baton.png" alt="Stickman student image"><br>
                 </a>
             </div>
 
-            <div class="right-student">
-                <a href="../html/about.html">
+            <div class="right-student"> <!-- Right side student image -->
+                <a href="../html/about.html"> <!-- Link to the about page -->
                     <img src="../image/etudiant_bonhomme_baton_inverted.png" alt="Stickman student image inverted">
                 </a>
             </div>
 
 
 
-            <div id="earthModal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <div class="image_container">
+            <div id="earthModal" class="modal"> <!-- Modal for Earth exploration -->
+                <div class="modal-content"> <!-- Content of the modal -->
+                    <span class="close">&times;</span> <!-- Close button for the modal -->
+                    <div class="image_container"> <!-- Container for the world map and pins -->
                         <img id="worldImage" src="../image/worldMap.png" alt="world Map">
 
-                        <div id="pin_container_1" class="pin_container">
+                        <div id="pin_container_1" class="pin_container"> <!-- Pin container for the first pin -->
                             <a href="../html/Animals_and_Quiz/DevilsHolePupFish.html">
+                                <!-- Link to the Devils Hole Pupfish page -->
                                 <img class="pins" src="../image/pinsPNG.png" alt="red pin">
                             </a>
-                            <div id="info-box-A1" class="pin-info-box">
+                            <div id="info-box-A1" class="pin-info-box"> <!-- Information box for the first pin -->
                                 <a href="../html/Animals_and_Quiz/DevilsHolePupFish.html">
                                     <img src="../image/Animals/Devils_hole_pupfish.png" alt="Devils Hole Pupfish">
                                 </a>
@@ -73,7 +76,7 @@
                             </div>
                         </div>
 
-                        <div id="pin_container_2" class="pin_container">
+                        <div id="pin_container_2" class="pin_container"> <!-- Pin container for the second pin -->
                             <a href="../html/Animals_and_Quiz/MandarinFish.html">
                                 <img class="pins" src="../image/pinsPNG.png" alt="red pin">
                             </a>
@@ -84,7 +87,7 @@
                             </div>
                         </div>
 
-                        <div id="pin_container_3" class="pin_container">
+                        <div id="pin_container_3" class="pin_container"> <!-- Pin container for the third pin -->
                             <a href="../html/Animals_and_Quiz/pandido.html">
                                 <img class="pins" src="../image/pinsPNG.png" alt="red pin">
                             </a>
@@ -95,7 +98,7 @@
                             </div>
                         </div>
 
-                        <div id="pin_container_4" class="pin_container">
+                        <div id="pin_container_4" class="pin_container"> <!-- Pin container for the fourth pin -->
                             <a href="../html/index.html">
                                 <img class="pins" src="../image/pinsPNG.png" alt="red pin">
                             </a>
@@ -120,31 +123,27 @@
 
         </div>
 
-
-
-
     </main>
 
     <footer>
-        <div class="footer-left">
+        <div class="footer-left"> <!-- Left side of the footer -->
             <p>© 2025 Killian KOULOURATH - Lélia GHEZALI</p>
         </div>
 
-        <div class="footer-center">
+        <div class="footer-center"> <!-- Center of the footer with navigation links -->
             <a class="NavText" href="index.html">Home</a>
             <a class="NavText" href="../html/Animals_and_Quiz/SeaLife.html">Sea life</a>
             <a class="NavText" href="../html/Animals_and_Quiz/EarthLife.html">Earth life</a>
             <a class="NavText" href="../html/about.html">About</a>
         </div>
 
-        <div class="footer-right">
+        <div class="footer-right"> <!-- Right side of the footer with logo -->
             <img id="logoEfrei" src="../image/LOGO_EFREI-WEB_blanc.png" alt="Efrei Paris logo">
         </div>
     </footer>
 
-    <script src="../js/index.js" defer></script>
+    <script src="../js/index.js" defer></script> <!-- Link to the JavaScript file for interactivity -->
 
 </body>
-
 
 </html>
