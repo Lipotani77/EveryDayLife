@@ -1,27 +1,22 @@
+/* CSS for the main page of the website */
 @font-face {
     font-family: "poppins";
     src: url("../fonts/poppins.regular.ttf");
     font-weight: normal;
     font-style: normal;
-}
+} 
 
+/* --------------- Global Styles --------------- */
 html,
 body {
     height: 100%;
     margin: 0;
     padding: 0;
-    padding-top: 37px;
-    ;
+    padding-top: 45px;
+
     background-color: #F5F5F0;
     display: flex;
     flex-direction: column;
-}
-
-
-@media (max-width: 768px) {
-    body {
-        padding-top: 300px;
-    }
 }
 
 
@@ -41,19 +36,19 @@ nav ul {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     margin-right: 2rem;
 }
 
 /* Each list item */
 nav ul li {
-    padding: 1rem 1.5rem;
+    padding: 0.5rem;
     font-size: 20px;
     transition: background-color 0.3s ease;
 }
 
-/* Hover effect */
+/* Hover effect on the entire li block */
 nav ul li:hover {
     background-color: #8BC34A;
 }
@@ -64,55 +59,46 @@ nav ul li:hover {
     color: #ffffff;
     font-weight: bold;
     display: block;
-    font-family: poppins, sans-serif;
-    font-size: medium;
-    padding: 1rem;
 }
 
 /* Logo image */
 nav ul li img {
     float: left;
-    padding: 0.5rem;
     margin-left: 0.5rem;
 }
 
+/* Navigation text */
+.NavText {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1rem;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    font-size: 1.5rem;
+}
+
+/* Align the first list item to the left */
+nav ul li:not(:first-child) {
+    float: right;
+}
+
+nav ul li img {
+    float: left;
+    margin-left: 0.5rem;
+}
+
+/* Align the first list item to the left */
+.navList {
+    float: left;
+}
+
+/* Logo image */
 .navLogoImage {
     width: 5rem;
 }
 
-@media (max-width: 768px) {
-    body {
-        padding-top: 50px;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        width: 100%;
-        padding: 0;
-        background-color: rgb(133, 185, 198);
-    }
-
-    nav ul li {
-        flex: 1;
-        text-align: center;
-        padding: 1rem 0;
-        box-sizing: border-box;
-    }
-
-    nav ul li a {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    .navLogoImage {
-        width: 4rem;
-    }
-}
-
+/* ---------------------------------*/
 
 
 
@@ -175,12 +161,14 @@ main {
     background-color: #1e1e1e;
 }
 
+/* Headings */
 h1,
-h2 {
+h2 { 
     text-align: center;
     color: #ffffff;
 }
 
+/* Paragraphs */
 .intro,
 .closing {
     max-width: 800px;
@@ -189,11 +177,13 @@ h2 {
     margin-bottom: 3rem;
 }
 
+/* Team Section */
 .team-section {
     text-align: center;
     margin-bottom: 3rem;
 }
 
+/* Team Cards */
 .team-cards {
     display: flex;
     flex-wrap: wrap;
@@ -202,6 +192,7 @@ h2 {
     margin-top: 2rem;
 }
 
+/* Individual Team Card */
 .team-card {
     background-color: rgb(61, 60, 60);
     border: 1px solid #444;
@@ -213,27 +204,32 @@ h2 {
     transition: transform 0.2s ease;
 }
 
+/* Team Card Hover Effect */
 .team-card:hover {
     transform: scale(1.03);
 }
 
+/* Team Card Image */
 .team-card h3 {
     color: #00bfff;
     margin-bottom: 0.5rem;
 }
 
+/* Team Card Text */
 .team-card p {
     text-align: left;
     line-height: 1.4;
     color: #ddd;
 }
 
+/* Team Card Bio */
 .team-card .bio {
     margin-top: 1rem;
     font-style: italic;
     color: #ccc;
 }
 
+/* Team Card Social Links */
 #lelia,
 #killian {
     width: 100%;
@@ -246,23 +242,62 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
+/* Team Card Social Links */
 #lelia_h3 {
     color: #759F4B;
     text-align: center;
 
 }
 
+/* Team Card Social Links */
 #killian_h3 {
     color: #417E9D;
     text-align: center;
 }
 
-#Gitlink{
+/* Social Media Links */
+#Gitlink {
     color: #00bfff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
+
+/* Social Media Links Hover Effect */
 #Gitlink:hover {
     color: #6ce18d;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    
+    body {
+        padding-top: 60px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+        background-color: rgb(133, 185, 198);
+    }
+
+    nav ul li {
+        flex: 1;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navLogoImage {
+        width: 4rem;
+    }
 }
