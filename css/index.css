@@ -340,7 +340,7 @@ iframe {
     z-index: 1;
     animation-name: rotate;
     animation-duration: 5s;
-    
+
 }
 
 .pin_container {
@@ -474,6 +474,7 @@ iframe {
     0% {
         color: #85b9c6;
     }
+
     25% {
         color: #7cc1d2;
     }
@@ -553,3 +554,91 @@ footer a {
 }
 
 /*---------------------------------------------*/
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    body {
+        padding-top: 50px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+        background-color: rgb(133, 185, 198);
+    }
+
+    nav ul li {
+        flex: 1;
+        text-align: center;
+        padding: 1rem 0;
+        box-sizing: border-box;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navLogoImage {
+        width: 4rem;
+    }
+
+    #HomeTitle {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        top: 5%;
+    }
+
+    .Earth_sea_image {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 35%;
+    }
+
+    .left-student {
+        width: 150px;
+        top: 60%;
+    }
+
+    .right-student {
+        width: 150px;
+        top: 60%;
+    }
+
+    .pins {
+        position: absolute;
+        width: 30px;
+        z-index: 1;
+        animation-name: rotate;
+        animation-duration: 5s;
+
+    }
+
+
+    .pin-info-box {
+        display: none;
+        position: absolute;
+        max-width: 500px;
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.95);
+        border: 2px solid #333;
+        border-radius: 8px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+        font-size: 0.6rem;
+        color: #000;
+        padding: 0.3rem;
+        z-index: 2000;
+    }
+
+    .pin-info-box img {
+        max-height: 50px;
+        height: auto;
+        display: block;
+    }
+}
