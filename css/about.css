@@ -10,11 +10,19 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    padding-top: 37px;;
     background-color: #F5F5F0;
     display: flex;
     flex-direction: column;
 }
 
+
+@media (max-width: 768px){
+    body {
+        padding-top: 300px;
+    }
+}
+    
 
 /* --------------- Header Styles --------------- */
 header {
@@ -32,7 +40,7 @@ header {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     margin-right: 2rem;
   }
@@ -44,7 +52,7 @@ header {
     transition: background-color 0.3s ease;
   }
   
-  /* Hover effect on the entire li block */
+  /* Hover effect */
   nav ul li:hover {
     background-color: #8BC34A;
   }
@@ -55,6 +63,9 @@ header {
     color: #ffffff;
     font-weight: bold;
     display: block;
+    font-family: poppins, sans-serif;
+    font-size: medium;
+    padding: 1rem;
   }
   
   /* Logo image */
@@ -64,39 +75,79 @@ header {
     margin-left: 0.5rem;
   }
   
-  /* Logo container */
   .navLogoImage {
-    width: 4.3rem;
-  }  
-
-.NavText {
-    text-decoration: none;
-    color: #ffffff;
-    padding: 1rem;
-    font-family: poppins, sans-serif;
-    font-weight: bold;
-    font-size: medium;
-}
-
-nav ul li:not(:first-child) {
-    float: right;
-}
-
-nav ul li img {
-    float: left;
-    padding: 0.5rem;
-    margin-left: 0.5rem;
-}
-
-
-.navList {
-    float: left;
-}
-
-
-.navLogoImage {
     width: 5rem;
+  }
+  
+  /* Responsive adjustments to devices */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: rgb(133, 185, 198);
+      padding: 1rem;
+    }
+  
+    nav ul li {
+      width: 100%;
+      text-align: left;
+      padding: 0.75rem 1rem;
+    }
+  
+    .navLogoImage {
+      width: 4rem;
+    }
+  }
+  
+
+/* -------- footer -------- */
+
+footer {
+    background-color: rgb(68, 67, 67);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: center;
 }
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1 1;
+    margin: 0.5rem 0;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#logoEfrei {
+    width: 4rem;
+    height: auto;
+}
+
 
 /* --------------- Main Content Styles --------------- */
 
@@ -139,7 +190,7 @@ h1, h2 {
     padding: 1.5rem;
     max-width: 300px;
     width: 100%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     transition: transform 0.2s ease;
 }
 
