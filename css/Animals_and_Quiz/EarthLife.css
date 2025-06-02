@@ -8,15 +8,15 @@
 
 /* --------------- Header Styles --------------- */
 header {
-    background-color: #8BC34A ;
+    background-color: #8BC34A;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-  }
-  
-  /* Navigation container */
-  nav ul {
+}
+
+/* Navigation container */
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -25,40 +25,35 @@ header {
     justify-content: flex-end;
     align-items: center;
     margin-right: 2rem;
-  }
-  
-  /* Each list item */
-  nav ul li {
-    padding: 1rem 1.5rem;
+}
+
+/* Each list item */
+nav ul li {
+    padding: 0.5rem;
     font-size: 20px;
     transition: background-color 0.3s ease;
-  }
-  
-  /* Hover effect on the entire li block */
-  nav ul li:hover {
+}
+
+/* Hover effect on the entire li block */
+nav ul li:hover {
     background-color: rgb(133, 185, 198);
-  }
-  
-  /* Navigation text */
-  .NavText {
+}
+
+/* Navigation text */
+.NavText {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
     display: block;
-  }
-  
-  /* Logo image */
-  nav ul li img {
-    float: left;
-    padding: 0.5rem;
-    margin-left: 0.5rem;
-  }
-  
-  /* Logo container */
-  .navLogoImage {
-    width: 4.3rem;
-  }  
+}
 
+/* Logo image */
+nav ul li img {
+    float: left;
+    margin-left: 0.5rem;
+}
+
+/* Navigation text */
 .NavText {
     text-decoration: none;
     color: #ffffff;
@@ -66,27 +61,30 @@ header {
     font-family: poppins, sans-serif;
     font-weight: bold;
     font-size: medium;
+    font-size: 1.5rem;
 }
 
+/* Align the first list item to the left */
 nav ul li:not(:first-child) {
     float: right;
 }
 
 nav ul li img {
     float: left;
-    padding: 0.5rem;
     margin-left: 0.5rem;
 }
 
-
+/* Align the first list item to the left */
 .navList {
     float: left;
 }
 
-
+/* Logo image */
 .navLogoImage {
     width: 5rem;
 }
+
+/* ---------------------------------*/
 
 /* Responsive adjustments to devices */
 @media (max-width: 768px) {
@@ -109,6 +107,7 @@ nav ul li img {
 
 /* --------------- Main Content Styles --------------- */
 
+/* Resetting default styles */
 html,
 body {
     height: 100%;
@@ -117,13 +116,6 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #F5F5F0;
-}
-
-/* Adapting to phone devices */
-@media (max-width: 768px) {
-    body {
-        padding-top: 300px;
-    }
 }
 
 main {
@@ -318,7 +310,10 @@ footer a {
     transform: translate(-50%, -50%) scale(1.05);
 }
 
-button, input[type="button"], input[type="submit"], input[type="file"] {
+button,
+input[type="button"],
+input[type="submit"],
+input[type="file"] {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 1rem;
@@ -336,13 +331,19 @@ button, input[type="button"], input[type="submit"], input[type="file"] {
 }
 
 
-button:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="file"]:hover {
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="file"]:hover {
     background-color: #228B22;
     box-shadow: 0 6px 12px #8BC34A;
     transform: translateY(-2px);
 }
 
-button:active, input[type="button"]:active, input[type="submit"]:active, input[type="file"]:active {
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="file"]:active {
     background-color: #228B22;
     box-shadow: 0 3px 6px #8BC34A;
     transform: translateY(0);
@@ -432,39 +433,45 @@ fieldset legend {
     list-style: none;
 }
 
-label, input {
+label,
+input {
     display: inline-block;
     width: 30%;
 }
+
 label {
     font-weight: bold;
 }
 
-.questions label, .questions input {
+.questions label,
+.questions input {
     font-weight: inherit;
     display: initial;
     width: inherit;
 }
 
-input[type="text"], input[type="email"], input[type="date"], select{
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
     padding: 10px;
     margin-bottom: 10px;
-    margin-top : 10px;
+    margin-top: 10px;
     border: 1px solid #228B22;
     border-radius: 8px;
 }
 
 
-#result{
+#result {
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
-.quiz{
+.quiz {
     display: none;
 }
 
-button{
+button {
     display: none;
 }
 
@@ -534,3 +541,36 @@ button{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Responsive styles */
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 60px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+        background-color: rgb(133, 185, 198);
+    }
+
+    nav ul li {
+        flex: 1;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navLogoImage {
+        width: 4rem;
+    }
+}
