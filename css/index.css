@@ -38,7 +38,7 @@ nav ul {
 
 /* Each list item */
 nav ul li {
-    padding: 1rem 1.5rem;
+    padding: 0.5rem;
     font-size: 20px;
     transition: background-color 0.3s ease;
 }
@@ -59,14 +59,9 @@ nav ul li:hover {
 /* Logo image */
 nav ul li img {
     float: left;
-    padding: 0.5rem;
     margin-left: 0.5rem;
 }
 
-/* Logo container */
-.navLogoImage {
-    width: 4.3rem;
-}
 
 .NavText {
     text-decoration: none;
@@ -75,6 +70,7 @@ nav ul li img {
     font-family: poppins, sans-serif;
     font-weight: bold;
     font-size: medium;
+    font-size: 1.5rem;
 }
 
 nav ul li:not(:first-child) {
@@ -83,7 +79,6 @@ nav ul li:not(:first-child) {
 
 nav ul li img {
     float: left;
-    padding: 0.5rem;
     margin-left: 0.5rem;
 }
 
@@ -103,7 +98,7 @@ main {
     flex: 1;
     display: flex;
     flex-direction: column;
-
+    margin-top: 3%;
 }
 
 .content {
@@ -559,7 +554,7 @@ footer a {
 /* Responsive styles */
 @media (max-width: 768px) {
     body {
-        padding-top: 50px;
+        padding-top: 60px;
     }
 
     nav ul {
@@ -575,7 +570,6 @@ footer a {
     nav ul li {
         flex: 1;
         text-align: center;
-        padding: 1rem 0;
         box-sizing: border-box;
     }
 
