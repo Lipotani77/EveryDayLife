@@ -81,7 +81,7 @@ header {
   
 @media (max-width: 768px) {
     body {
-        padding-top: 50px; /* adjust based on the actual mobile header height */
+        padding-top: 50px;
     }
 
     nav ul {
@@ -162,6 +162,7 @@ footer a {
     width: 4rem;
     height: auto;
 }
+
 
 
 /* --------------- Main Content Styles --------------- */
