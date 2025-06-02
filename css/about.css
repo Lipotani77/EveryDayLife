@@ -256,3 +256,13 @@ h2 {
     color: #417E9D;
     text-align: center;
 }
+
+#Gitlink{
+    color: #00bfff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+#Gitlink:hover {
+    color: #6ce18d;
+}
