@@ -118,9 +118,9 @@ function submitQuiz() {
                 score -= 10;
         }
         else {
-            if (["a", "b"].includes(answer.value))
+            if (["a", "c"].includes(answer.value))
                 score += 5;
-            else if (answer.value === "c")
+            else if (answer.value === "b")
                 score -= 10;
         }
     }
