@@ -34,18 +34,6 @@ nav ul li {
     transition: background-color 0.3s ease;
 }
 
-/* Hover effect on the entire li block */
-nav ul li:hover {
-    background-color: rgb(133, 185, 198);
-}
-
-/* Navigation text */
-.NavText {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    display: block;
-}
 
 /* Logo image */
 nav ul li img {
@@ -57,11 +45,17 @@ nav ul li img {
 .NavText {
     text-decoration: none;
     color: #ffffff;
-    padding: 1rem;
+    padding: 1.6rem;
     font-family: poppins, sans-serif;
     font-weight: bold;
     font-size: medium;
     font-size: 1.5rem;
+    display: block;
+}
+
+/* Navigation block hover effect */
+nav ul li:hover {
+    background-color: rgb(133, 185, 198);
 }
 
 /* Align the first list item to the left */
@@ -84,8 +78,6 @@ nav ul li img {
     width: 5rem;
 }
 
-/* ---------------------------------*/
-
 /* Responsive adjustments to devices */
 @media (max-width: 768px) {
     nav ul {
@@ -97,7 +89,7 @@ nav ul li img {
     nav ul li {
         width: 100%;
         text-align: left;
-        padding: 0.75rem 1rem;
+        padding: 0.75rem;
     }
 
     .navLogoImage {
@@ -137,7 +129,7 @@ fieldset.quiz {
     box-sizing: border-box;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
     color: #1B3D2F;
     font-family: poppins, sans-serif;
@@ -189,7 +181,7 @@ h1 {
 }
 
 
-/* -------- CSS for the footer -------- */
+/* -------- footer -------- */
 
 footer {
     background-color: rgb(68, 67, 67);
@@ -236,8 +228,6 @@ footer a {
     width: 4rem;
     height: auto;
 }
-
-/*---------------------------------------------*/
 
 
 #taquin-game {
