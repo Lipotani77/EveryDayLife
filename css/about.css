@@ -10,19 +10,20 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    padding-top: 37px;;
+    padding-top: 37px;
+    ;
     background-color: #F5F5F0;
     display: flex;
     flex-direction: column;
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     body {
         padding-top: 300px;
     }
 }
-    
+
 
 /* --------------- Header Styles --------------- */
 header {
@@ -31,10 +32,10 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-  }
-  
-  /* Navigation container */
-  nav ul {
+}
+
+/* Navigation container */
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -43,22 +44,22 @@ header {
     justify-content: flex-start;
     align-items: center;
     margin-right: 2rem;
-  }
-  
-  /* Each list item */
-  nav ul li {
+}
+
+/* Each list item */
+nav ul li {
     padding: 1rem 1.5rem;
     font-size: 20px;
     transition: background-color 0.3s ease;
-  }
-  
-  /* Hover effect */
-  nav ul li:hover {
+}
+
+/* Hover effect */
+nav ul li:hover {
     background-color: #8BC34A;
-  }
-  
-  /* Navigation text */
-  .NavText {
+}
+
+/* Navigation text */
+.NavText {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
@@ -66,19 +67,19 @@ header {
     font-family: poppins, sans-serif;
     font-size: medium;
     padding: 1rem;
-  }
-  
-  /* Logo image */
-  nav ul li img {
+}
+
+/* Logo image */
+nav ul li img {
     float: left;
     padding: 0.5rem;
     margin-left: 0.5rem;
-  }
-  
-  .navLogoImage {
+}
+
+.navLogoImage {
     width: 5rem;
-  }
-  
+}
+
 @media (max-width: 768px) {
     body {
         padding-top: 50px;
@@ -113,7 +114,7 @@ header {
 }
 
 
-  
+
 
 /* -------- footer -------- */
 
@@ -174,12 +175,14 @@ main {
     background-color: #1e1e1e;
 }
 
-h1, h2 {
+h1,
+h2 {
     text-align: center;
     color: #ffffff;
 }
 
-.intro, .closing {
+.intro,
+.closing {
     max-width: 800px;
     margin: auto;
     text-align: center;
@@ -206,7 +209,7 @@ h1, h2 {
     padding: 1.5rem;
     max-width: 300px;
     width: 100%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.2s ease;
 }
 
@@ -231,7 +234,8 @@ h1, h2 {
     color: #ccc;
 }
 
-#lelia, #killian {
+#lelia,
+#killian {
     width: 100%;
     max-width: 200px;
     height: auto;
@@ -245,7 +249,7 @@ h1, h2 {
 #lelia_h3 {
     color: #759F4B;
     text-align: center;
-    
+
 }
 
 #killian_h3 {
