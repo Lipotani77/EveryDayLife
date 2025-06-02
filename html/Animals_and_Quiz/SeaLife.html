@@ -10,40 +10,41 @@
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header> <!-- Header section with navigation bar -->
+        <nav> <!-- Navigation bar with logo and links -->
             <ul class="navList">
-                <img class="navLogoImage" src="../../image/logo.png">
+                <li><img class="navLogoImage" src="../../image/logo.png" alt="EverydayLife logo"></li>
                 <li><a class="NavText" href="../index.html">Home</a></li>
-                <li><a class="NavText" href="SeaLife.html">Sea life</a></li>
-                <li><a class="NavText" href="../Animals_and_Quiz/EarthLife.html">Earth life</a></li>
+                <li><a class="NavText" href="../Animals_and_Quiz/SeaLife.html">Sea life</a></li>
+                <li><a class="NavText" href="EarthLife.html">Earth life</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h1>Do you understand Sea life?</h1>
+    <main> <!-- Main content area -->
+        <h1>Do you understand Sea life?</h1> <!-- Main title of the page -->
         <form method="post" name="Quiz" action="#" class="box" id="QuizId" onsubmit="return false">
-            <fieldset id="information">
-                <legend>Your informations</legend>
-                <div>
+            <!-- Form for the quiz -->
+            <fieldset id="information"> <!-- Fieldset for user information -->
+                <legend>Your informations</legend> <!-- Legend for the fieldset -->
+                <div> <!-- Input for user's name -->
                     <label for="name">Name :</label>
                     <input type="text" id="name" name="name" required>
                 </div>
-                <div>
+                <div> <!-- Input for user's surname -->
                     <label for="surname">Surname :</label>
                     <input type="text" id="surname" name="surname" required>
                 </div>
-                <div>
+                <div> <!-- Input for user's birth date -->
                     <label for="birth_date">Birth date:</label>
                     <input type="date" id="birth_date" name="birth_date" required>
                 </div>
-                <div>
+                <div> <!-- Input for user's mail address -->
                     <label for="mail">Mail address:</label>
                     <input type="email" id="mail" name="mail" required>
                 </div>
-                <div>
-                    <label for="statut">Status :</label>
+                <div> <!-- Input for user's status -->
+                    <label for="status">Status :</label>
                     <select id="status" name="status" required>
                         <option value="" disabled selected>Select your status</option>
                         <option value="student">Student</option>
@@ -54,76 +55,86 @@
 
                 <input type="button" value="Start quiz" onclick="quizAlert()">
 
-            </fieldset>
-            <fieldset class="quiz">
-                <legend>QCM - Sea Life</legend>
-                <ol id="Round1">
-                    <li class="questions_style">
-                        What is your CB number?
-                        <ul class="questions">
-                            <li><input type="radio" id="q1_1" name="q1" value="a" /><label for="q1_1"
-                                    class="btn_radio">Prop1</label></li>
-                            <li><input type="radio" id="q1_2" name="q1" value="b" /><label for="q1_2"
-                                    class="btn_radio">Prop2</label></li>
-                            <li><input type="radio" id="q1_3" name="q1" value="c" /><label for="q1_3"
-                                    class="btn_radio">Prop3</label></li>
+            </fieldset> <!-- End of user information fieldset -->
+
+            <fieldset class="quiz"> <!-- Fieldset for the quiz questions -->
+                <legend>QCM - Sea Life</legend> <!-- Legend for the quiz fieldset -->
+                <ol id="Round1"> <!-- Ordered list for the quiz questions -->
+
+                    <li class="questions_style"> <!-- First question -->
+                        Where can the Devils Hole pupfish be found in the wild?
+                        <ul class="questions"> <!-- Options for the first question -->
+                            <li><input type="radio" id="q1_1" name="q1" value="a"><label for="q1_1" class="btn_radio">In
+                                    coral reefs across the Pacific Ocean</label></li>
+                            <li><input type="radio" id="q1_2" name="q1" value="b"><label for="q1_2" class="btn_radio">In
+                                    a single desert cavern in Nevada</label></li>
+                            <li><input type="radio" id="q1_3" name="q1" value="c"><label for="q1_3" class="btn_radio">In
+                                    freshwater rivers of South America</label></li>
                         </ul>
                     </li>
 
-                    <li class="questions_style">
-                        What is your home address?
-                        <ul class="questions">
-                            <li><input type="checkbox" id="q2_1" name="q2[]" value="a" /><label for="q2_1"
-                                    class="btn_checkbox">Prop1</label></li>
-                            <li><input type="checkbox" id="q2_2" name="q2[]" value="b" /><label for="q2_2"
-                                    class="btn_checkbox">Prop2</label></li>
-                            <li><input type="checkbox" id="q2_3" name="q2[]" value="c" /><label for="q2_3"
-                                    class="btn_checkbox">Prop3</label></li>
+                    <li class="questions_style"> <!-- Second question -->
+                        What statements about the Devils Hole pupfish are true? (select all that apply)
+                        <ul class="questions"> <!-- Options for the second question -->
+                            <li><input type="checkbox" id="q2_1" name="q2[]" value="a"><label for="q2_1"
+                                    class="btn_checkbox">They can survive in low-oxygen, high-temperature
+                                    environments.</label></li>
+                            <li><input type="checkbox" id="q2_2" name="q2[]" value="b"><label for="q2_2"
+                                    class="btn_checkbox">They are widely distributed across the United States.</label>
+                            </li>
+                            <li><input type="checkbox" id="q2_3" name="q2[]" value="c"><label for="q2_3"
+                                    class="btn_checkbox">Their only habitat is sustained by an underground
+                                    aquifer.</label></li>
                         </ul>
                     </li>
 
-                    <li class="questions_style">
-                        Are you rich?
-                        <ul class="questions">
-                            <li><input type="radio" id="q3_1" name="q3" value="a" /><label for="q3_1"
-                                    class="btn_radio">Prop1</label></li>
-                            <li><input type="radio" id="q3_2" name="q3" value="b" /><label for="q3_2"
-                                    class="btn_radio">Prop2</label></li>
-                            <li><input type="radio" id="q3_3" name="q3" value="c" /><label for="q3_3"
-                                    class="btn_radio">Prop3</label></li>
+                    <li class="questions_style"> <!-- Third question -->
+                        Which of the following is true about the mandarin fish?
+                        <ul class="questions"> <!-- Options for the third question -->
+                            <li><input type="radio" id="q3_1" name="q3" value="a"><label for="q3_1"
+                                    class="btn_radio">Their colors come from pigments in their skin.</label></li>
+                            <li><input type="radio" id="q3_2" name="q3" value="b"><label for="q3_2"
+                                    class="btn_radio">They spawn by hiding their eggs in coral crevices.</label></li>
+                            <li><input type="radio" id="q3_3" name="q3" value="c"><label for="q3_3"
+                                    class="btn_radio">They perform a synchronized dance during spawning.</label></li>
                         </ul>
                     </li>
                 </ol>
             </fieldset>
 
-            <div>
-                <input type="button" id="submit" value="Submit" />
+            <div> <!-- Submit button for the quiz -->
+                <input type="button" id="submit" value="Submit">
             </div>
 
-            <section id="taquin-game">
+            <section id="taquin-game"> <!-- Section for the Taquin game -->
                 <h2>Play Taquin!</h2>
 
-                <div id="image-preview-container">
-                    <div class="image-option" onclick="chooseImage('../../image/Animals/Devils_hole_pupfish.png')">
-                        <img src="../../image/Animals/Devils_hole_pupfish.png" alt="Turtle">
-                        <div class="image-label">Choose Image 1</div>
-                    </div>
+                <div id="image-preview-container"> <!-- Container for image options -->
 
-                    <div class="image-option" onclick="chooseImage('../../image/Animals/Dragonet_mandarin.png')">
-                        <img src="../../image/Animals/Dragonet_mandarin.png" alt="Panda">
+                    <div class="image-option"
+                        onclick="chooseImage('../../image/Animals/Dragonet_mandarin.png')">
+                        <img src="../../image/Animals/Dragonet_mandarin.png" alt="Mandarin Fish">
+                        <div class="image-label">Choose Image 1</div>
+                    </div> <!-- First image option for the Taquin game -->
+
+                    <!-- Second image option for the Taquin game -->
+                    <div class="image-option" onclick="chooseImage('../../image/Animals/Devils_hole_pupfish.png')">
+                        <img src="../../image/Animals/Devils_hole_pupfish.png" alt="Panda">
                         <div class="image-label">Choose Image 2</div>
                     </div>
 
                 </div>
 
-                <div id="taquin-board"></div>
-                <input type="button" id="shuffle-btn" value="Shuffle" />
+
+                <div id="taquin-board"> </div> <!-- Container for the Taquin board -->
+
+                <input type="button" id="shuffle-btn" value="Shuffle"> <!-- Button to shuffle the Taquin board -->
             </section>
 
 
             <div id="win-message">Congratulations !<br>You solved the puzzle!</div>
+        </form>
     </main>
-
 
     <footer>
 
@@ -133,11 +144,10 @@
 
         <div class="footer-center">
             <a class="NavText" href="../index.html">Home</a>
-            <a class="NavText" href="SeaLife.html">Sea life</a>
-            <a class="NavText" href="../Animals_and_Quiz/EarthLife.html">Earth life</a>
+            <a class="NavText" href="../Animals_and_Quiz/SeaLife.html">Sea life</a>
+            <a class="NavText" href="EarthLife.html">Earth life</a>
             <a class="NavText" href="../about.html">About</a>
         </div>
-
         <div class="footer-right">
             <img id="logoEfrei" src="../../image/LOGO_EFREI-WEB_blanc.png" alt="Efrei Paris logo">
         </div>
@@ -145,7 +155,6 @@
 
     <script src="../../js/taquin.js"></script>
     <script src="../../js/qcm.js"></script>
-
 </body>
 
 </html>

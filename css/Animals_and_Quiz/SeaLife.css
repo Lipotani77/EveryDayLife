@@ -29,7 +29,7 @@ nav ul {
 
 /* Each list item */
 nav ul li {
-    padding: 1rem 1.5rem;
+    padding: 0.5rem;
     font-size: 20px;
     transition: background-color 0.3s ease;
 }
@@ -50,15 +50,10 @@ nav ul li:hover {
 /* Logo image */
 nav ul li img {
     float: left;
-    padding: 0.5rem;
     margin-left: 0.5rem;
 }
 
-/* Logo container */
-.navLogoImage {
-    width: 4.3rem;
-}
-
+/* Navigation text */
 .NavText {
     text-decoration: none;
     color: #ffffff;
@@ -66,27 +61,30 @@ nav ul li img {
     font-family: poppins, sans-serif;
     font-weight: bold;
     font-size: medium;
+    font-size: 1.5rem;
 }
 
+/* Align the first list item to the left */
 nav ul li:not(:first-child) {
     float: right;
 }
 
 nav ul li img {
     float: left;
-    padding: 0.5rem;
     margin-left: 0.5rem;
 }
 
-
+/* Align the first list item to the left */
 .navList {
     float: left;
 }
 
-
+/* Logo image */
 .navLogoImage {
     width: 5rem;
 }
+
+/* ---------------------------------*/
 
 /* Responsive adjustments to devices */
 @media (max-width: 768px) {
@@ -550,4 +548,38 @@ button {
     background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 60px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+        background-color: rgb(133, 185, 198);
+    }
+
+    nav ul li {
+        flex: 1;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navLogoImage {
+        width: 4rem;
+    }
 }

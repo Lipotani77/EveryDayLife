@@ -1,13 +1,15 @@
 /* CSS for the main page of the website */
-@font-face { 
+@font-face {
     font-family: "poppins";
     src: url("../fonts/poppins.regular.ttf");
     font-weight: normal;
     font-style: normal;
-} /* Font that we will use */ 
+}
+
+/* Font that we will use */
 
 /* CSS for the entire page */
-html, 
+html,
 body {
     height: 100%;
     margin: 0;
@@ -94,6 +96,7 @@ nav ul li img {
 .navLogoImage {
     width: 5rem;
 }
+
 /* ---------------------------------*/
 
 /* --------------- Main Content Styles --------------- */
@@ -573,6 +576,8 @@ footer a {
     width: 4rem;
     height: auto;
 }
+
+/*---------------------------------------------*/
 
 /*---------------------------------------------*/
 
