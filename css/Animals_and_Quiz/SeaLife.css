@@ -13,10 +13,10 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-  }
-  
-  /* Navigation container */
-  nav ul {
+}
+
+/* Navigation container */
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -25,39 +25,39 @@ header {
     justify-content: flex-end;
     align-items: center;
     margin-right: 2rem;
-  }
-  
-  /* Each list item */
-  nav ul li {
+}
+
+/* Each list item */
+nav ul li {
     padding: 1rem 1.5rem;
     font-size: 20px;
     transition: background-color 0.3s ease;
-  }
-  
-  /* Hover effect on the entire li block */
-  nav ul li:hover {
+}
+
+/* Hover effect on the entire li block */
+nav ul li:hover {
     background-color: #8BC34A;
-  }
-  
-  /* Navigation text */
-  .NavText {
+}
+
+/* Navigation text */
+.NavText {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
     display: block;
-  }
-  
-  /* Logo image */
-  nav ul li img {
+}
+
+/* Logo image */
+nav ul li img {
     float: left;
     padding: 0.5rem;
     margin-left: 0.5rem;
-  }
-  
-  /* Logo container */
-  .navLogoImage {
+}
+
+/* Logo container */
+.navLogoImage {
     width: 4.3rem;
-  }  
+}
 
 .NavText {
     text-decoration: none;
@@ -88,6 +88,26 @@ nav ul li img {
     width: 5rem;
 }
 
+/* Responsive adjustments to devices */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: rgb(133, 185, 198);
+        padding: 1rem;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: left;
+        padding: 0.75rem 1rem;
+    }
+
+    .navLogoImage {
+        width: 4rem;
+    }
+}
+
 /* --------------- Main Content Styles --------------- */
 
 html,
@@ -98,6 +118,13 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #F5F5F0;
+}
+
+/* Adapting to phone devices */
+@media (max-width: 768px) {
+    body {
+        padding-top: 300px;
+    }
 }
 
 main {
@@ -236,6 +263,7 @@ footer a {
     width: fit-content;
 }
 
+
 .tile {
     width: 100px;
     height: 100px;
@@ -267,6 +295,7 @@ footer a {
     cursor: default;
 }
 
+
 #win-message {
     position: fixed;
     top: 50%;
@@ -292,7 +321,10 @@ footer a {
     transform: translate(-50%, -50%) scale(1.05);
 }
 
-button, input[type="button"], input[type="submit"], input[type="file"] {
+button,
+input[type="button"],
+input[type="submit"],
+input[type="file"] {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 1rem;
@@ -310,13 +342,19 @@ button, input[type="button"], input[type="submit"], input[type="file"] {
 }
 
 
-button:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="file"]:hover {
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="file"]:hover {
     background-color: #0077BE;
     box-shadow: 0 6px 12px #6CCFF6;
     transform: translateY(-2px);
 }
 
-button:active, input[type="button"]:active, input[type="submit"]:active, input[type="file"]:active {
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="file"]:active {
     background-color: #0077BE;
     box-shadow: 0 3px 6px #6CCFF6;
     transform: translateY(0);
@@ -406,39 +444,45 @@ fieldset legend {
     list-style: none;
 }
 
-label, input {
+label,
+input {
     display: inline-block;
     width: 30%;
 }
+
 label {
     font-weight: bold;
 }
 
-.questions label, .questions input {
+.questions label,
+.questions input {
     font-weight: inherit;
     display: initial;
     width: inherit;
 }
 
-input[type="text"], input[type="email"], input[type="date"], select{
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
     padding: 10px;
     margin-bottom: 10px;
-    margin-top : 10px;
+    margin-top: 10px;
     border: 1px solid #0077BE;
     border-radius: 8px;
 }
 
 
-#result{
+#result {
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
-.quiz{
+.quiz {
     display: none;
 }
 
-button{
+button {
     display: none;
 }
 
@@ -507,4 +551,3 @@ button{
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-

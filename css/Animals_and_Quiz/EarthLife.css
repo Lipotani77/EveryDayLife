@@ -88,6 +88,25 @@ nav ul li img {
     width: 5rem;
 }
 
+/* Responsive adjustments to devices */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: left;
+        padding: 0.75rem 1rem;
+    }
+
+    .navLogoImage {
+        width: 4rem;
+    }
+}
+
 /* --------------- Main Content Styles --------------- */
 
 html,
@@ -98,6 +117,13 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #F5F5F0;
+}
+
+/* Adapting to phone devices */
+@media (max-width: 768px) {
+    body {
+        padding-top: 300px;
+    }
 }
 
 main {
